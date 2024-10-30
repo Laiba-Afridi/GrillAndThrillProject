@@ -9,6 +9,7 @@ import footerLogo from './footerLogo.png'
 import socialicons from './socialicons.png'
 import appStore from './app_store.png'
 import playStore from './play_store.png'
+import cross_icon from './cross_icon.png'
 
 import menu1 from './menu1.png'
 import menu2 from './menu2.png'
@@ -69,7 +70,7 @@ import beverges6 from './beverges6.png'
 import beverges7 from './beverges7.png'
 import beverges8 from './beverges8.png'
 
-import nuggest1 from './beverges1.png'
+import nuggest1 from './nuggest1.png'
 import nuggest2 from './nuggest2.png'
 import nuggest3 from './nuggest3.png'
 import nuggest4 from './nuggest4.png'
@@ -91,6 +92,7 @@ export const assets={
   socialicons,
   appStore,
   playStore,
+  cross_icon
 }
 
 export const menu_list = [

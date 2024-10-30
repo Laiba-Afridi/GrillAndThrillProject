@@ -76,6 +76,7 @@
     }
     .nav-bar-option img{
       width: 22px;
+      cursor: pointer;
     }
     
     .nav-bar-option button{
