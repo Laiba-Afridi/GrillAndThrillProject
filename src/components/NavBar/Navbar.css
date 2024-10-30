@@ -1,0 +1,112 @@
+
+  .nav-bar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-bar .Logo{
+    width: 150px;
+  }
+
+  .nav-bar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #080F17;
+    font-size: 22px;
+  }
+
+  .nav-bar-option{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .nav-bar button{
+    background: transparent;
+    font-size: 16px;
+    color: #a10000;
+    border: 1px solid #a10000;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .nav-bar button:hover{
+   background-color: #a10000;
+   color: #ffffe7;
+  }
+
+  .nav-bar .active{
+   padding-bottom: 2px;
+   border-bottom: 2px solid #a10000;
+  }
+
+  .nav-bar li{
+    cursor: pointer;
+  }
+
+  .navbar-search{
+    position: relative;
+  }
+
+  .navbar-search .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color:#FFC000;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+  }
+
+  @media (max-width:1050px) {
+    .nav-bar .Logo{
+      width: 140px;
+    }
+    .nav-bar-menu{
+      gap: 20px;
+      font-size: 18px;
+    }
+    .nav-bar-option{
+      gap: 30px;
+    }
+    .nav-bar-option img{
+      width: 22px;
+    }
+    
+    .nav-bar-option button{
+     padding: 8px 25px;
+    }
+  }
+
+  @media (max-width:900px) {
+    .nav-bar .Logo{
+      width: 120px;
+    }
+    .nav-bar-menu{
+      gap: 15px;
+      font-size: 16px;
+    }
+    .nav-bar-option{
+      gap: 20px;
+    }
+    .nav-bar-option img{
+      width: 20px;
+    }
+    
+    .nav-bar-option button{
+     padding: 7px 20px;
+     font-size: 15px;
+    }
+  }
+
+  @media (max-width:750px) {
+
+    .nav-bar-menu{
+      display: none;
+    }
+  }
