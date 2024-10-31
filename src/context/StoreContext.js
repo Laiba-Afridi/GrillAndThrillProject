@@ -8,6 +8,7 @@ const StoreContextProvider = (props) => {
 
     const [cartItem,setCartItem] = useState({});
 
+
   
     const addToCart = (itemId) => {
         console.log(`Adding item with ID: ${itemId}`);
@@ -56,7 +57,7 @@ const StoreContextProvider = (props) => {
     setCartItem,
     addToCart,
     removeCartItem,
-    getTotalCartAmount
+    getTotalCartAmount,
     }
 
     return(

@@ -1,11 +1,13 @@
 import React from 'react';
 import './LogIn.css';
-import { useState } from 'react';
+import { useState} from 'react';
 import { assets } from '../../assets/assets';
 
-const LogIn = ({setShowLogin}) => {
+
+const LogIn = ({setShowLogIn}) => {
 const [currState,setCurrState] = useState("Sign Up")
-   
+
+  
   return (
 <div className="login-page">
        <form className='login-page-container'>
@@ -13,14 +15,14 @@ const [currState,setCurrState] = useState("Sign Up")
 <h2>
 {currState}
 </h2>
-<img onClick={()=>setShowLogin(false)} src={assets.cross_icon} alt="cancel"/>
+<img onClick={()=>setShowLogIn(false)} src={assets.cross_icon} alt="cancel"/>
 </div>
 <div className="login-page-inputs">
- {currState==="Login"?<></>:<input type="text" placeholder="Your name" required />}
+ {currState==="LogIn"?<></>:<input type="text" placeholder="Your name" required />}
 <input type="email" placeholder='Your email' required/>
 <input type="password" placeholder='Password' required/>
 </div>
-<button>{currState==="Sign Up"?"Create account":"Login"}</button>
+<button>{currState==="Sign Up"?"Create account":"LogIn"}</button>
 
 <div className="login-page-condition">
   <input type="checkbox" required/>

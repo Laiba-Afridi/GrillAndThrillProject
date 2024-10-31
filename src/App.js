@@ -9,21 +9,25 @@ import CartPage from './pages/Cart/CartPage'
 import Placeorder from './pages/PlaceOrder/Placeorder'
 
 import LogIn from './components/Login/LogIn'
+import ExploreMenu from './components/ExploreMenu/ExploreMenu';
+import MobileApp from './components/MobileApp/MobileApp';
 
 const App = () => {
-  const [showLogin,setShowLogin] = useState(false)
+  const [showLogIn,setShowLogIn] = useState(false)
 
   return (
     <>
-    {showLogin?<LogIn setShowLogin={setShowLogin}/>:<></>}
+    {showLogIn?<LogIn setShowLogIn={setShowLogIn}/>:<></>}
 
       <div className='app'>
-      <Navbar setShowLogin={setShowLogin}/>
+      <Navbar setShowLogIn={setShowLogIn}/>
 
     <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/CartPage' element={<CartPage/>}></Route>
       <Route path='/Placeorder' element={<Placeorder/>}></Route>
+      <Route path="/explore-menu" element={<ExploreMenu/>}></Route>
+      <Route path="/MobileApp" element={<MobileApp/>}></Route>
     </Routes>
     </div>
     <Footer/>

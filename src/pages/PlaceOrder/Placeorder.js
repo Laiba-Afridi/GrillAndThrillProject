@@ -1,12 +1,22 @@
 import React, { useContext } from "react";
 import './Placeorder.css'
 import { StoreContext } from '../../context/StoreContext';
+import { useNavigate } from 'react-router-dom'; 
+import { assets } from "../../assets/assets";
 
 
 const Placeorder =()=> {
- const {getTotalCartAmount}= useContext(StoreContext)
+ const {getTotalCartAmount}= useContext(StoreContext);
+ const navigate = useNavigate();
     return (
-      <form className="place-order">
+      <div className="ProceedPayment">
+          {/* Back Button placed above Delivery Information */}
+      <div className="back-button" onClick={() => navigate('/CartPage')}>
+        <img src={assets.backArrow} alt="Back" className="back-button2" />
+      </div>
+      
+     <form className="place-order">
+      
         <div className="place-order-left"> 
           <p className="title">Delivery information</p>
 
@@ -65,6 +75,9 @@ const Placeorder =()=> {
 
 
       </form>
+      </div>
+      
+      
 
     );
 }

@@ -1,20 +1,32 @@
 import react from 'react';
 import './CartPage.css';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { StoreContext } from '../../context/StoreContext';
 import { useNavigate } from 'react-router-dom';
-
+import Navbar from '../../components/NavBar/Navbar';
+import { assets } from '../../assets/assets';
 
 
 const Cart = () =>
 {
-    const navigate = useNavigate(); 
-    const { cartItem={}, food_list=[], removeCartItem, getTotalCartAmount } = useContext(StoreContext);
+    const navigate = useNavigate();
+    const { cartItem = {}, food_list = [], removeCartItem, getTotalCartAmount} = useContext(StoreContext);
 
     return(
+        
         <div className='cart'>
+        <div className="back-button">
+                <img 
+                    src={assets.backArrow} // Replace with the actual icon path in assets
+                    alt="Back to Menu"
+                    onClick={() => navigate('/#Explore-Menu')} // Adjust the path if Menu is on Home or a different route
+                    className="back-icon"
+                />
+                <span onClick={() => navigate('/#Explore-Menu')} className="back-text"></span>
+            </div>
+
             <div className='cart-items'>
-               <div className='cart-items-title'>
+            <div className='cart-items-title'>
 
                        <p>Items</p>
                        <p>Title</p>
@@ -77,7 +89,8 @@ const Cart = () =>
   </div>
   </div>
 
-    </div>            
+    </div>   
+
             </div>
     );
 }

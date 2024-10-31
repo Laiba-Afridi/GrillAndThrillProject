@@ -10,6 +10,7 @@ import socialicons from './socialicons.png'
 import appStore from './app_store.png'
 import playStore from './play_store.png'
 import cross_icon from './cross_icon.png'
+import backArrow from './backArrow.png'
 
 import menu1 from './menu1.png'
 import menu2 from './menu2.png'
@@ -92,7 +93,8 @@ export const assets={
   socialicons,
   appStore,
   playStore,
-  cross_icon
+  cross_icon,
+  backArrow,
 }
 
 export const menu_list = [
