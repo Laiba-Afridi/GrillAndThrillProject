@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from './components/NavBar/Navbar'
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import Footer from './components/Footer/Footer'
+// import Home from './pages/Home/Home'
+// import Footer from './components/Footer/Footer'
 import CartPage from './components/Cart/CartPage'
 
 const App = () => {
